@@ -11,7 +11,7 @@ metadata:
     - techdocs
     - mkdocs
 spec:
-  owner: THBS-Techdoc
+  owner: backstage/techdocs-core
   type: documentation
 
   parameters:
