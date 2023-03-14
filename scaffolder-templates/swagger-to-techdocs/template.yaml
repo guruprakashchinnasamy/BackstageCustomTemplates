@@ -5,8 +5,7 @@ metadata:
   title: Generate Techdoc From Swagger
   description: Generate Techdoc from swagger file
   tags:
-    - swagger
-    - OpenAPI
+    - recommended
     - techdocs
     - mkdocs
 spec:
