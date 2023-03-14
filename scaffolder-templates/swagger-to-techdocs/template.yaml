@@ -3,9 +3,10 @@ kind: Template
 metadata:
   name: gen-swagger-techdoc-templatee
   title: Generate Techdoc From Swagger
-  description: Create a new standalone documentation project
+  description: Generate Techdoc from swagger file
   tags:
-    - recommended
+    - swagger
+    - OpenAPI
     - techdocs
     - mkdocs
 spec:
