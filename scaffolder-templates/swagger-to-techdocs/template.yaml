@@ -1,12 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: gen-techdoc-swagger-template
-  title: Generate Techdoc From Swagger
-  description: Create a new standalone documentation project using Swagger files
+  name: docs-template
+  title: Documentation Template
+  description: Create a new standalone documentation project
   tags:
-    - swagger
-    - OpenAPI
+    - recommended
     - techdocs
     - mkdocs
 spec:
