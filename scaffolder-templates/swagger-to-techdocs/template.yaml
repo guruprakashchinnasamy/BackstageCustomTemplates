@@ -33,7 +33,7 @@ spec:
         swaggerUrl:
           title: Swagger Location URL
           type: string
-          description: provide the swagger public URL
+          description: Provide the Swagger files public URL
           #ui:field: RepoUrlPicker
           #ui:options:
             #allowedHosts:
