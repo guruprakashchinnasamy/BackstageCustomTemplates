@@ -34,10 +34,10 @@ spec:
         swaggerUrl:
           title: Swagger Location URL
           type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
+          #ui:field: RepoUrlPicker
+          #ui:options:
+            #allowedHosts:
+              #- github.com
         owner:
           title: Owner
           type: string
