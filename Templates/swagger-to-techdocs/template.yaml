@@ -1,11 +1,12 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: 123124234docs-template
-  title: 1231231231Documentation Template
-  description: 23413213123Create a new standalone documentation project
+  name: swagger-automatic-docs-template
+  title: Swagger to Documentation Template
+  description: Create a new standalone documentation project using Swagger files
   tags:
-    - recommended
+    - swagger
+    - Open API
     - techdocs
     - mkdocs
 spec:
@@ -17,6 +18,7 @@ spec:
       required:
         - name
         - description
+        - swaggerUrl
       properties:
         name:
           title: Name
@@ -31,6 +33,7 @@ spec:
         swaggerUrl:
           title: Swagger Location URL
           type: string
+          description: provide the swagger public URL
           #ui:field: RepoUrlPicker
           #ui:options:
             #allowedHosts:
@@ -68,6 +71,7 @@ spec:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
+          swaggerUrl: ${{ parameters.swaggerUrl }}
           owner: ${{ parameters.owner }}
 
     - id: publish
