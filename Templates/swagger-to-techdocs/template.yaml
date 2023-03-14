@@ -31,7 +31,7 @@ spec:
           type: string
           description: A description for the component
         swaggerUrl:
-          title: Swagger Location URL
+          title: Swagger Location URL-
           type: string
           description: provide the swagger public URL
           #ui:field: RepoUrlPicker
