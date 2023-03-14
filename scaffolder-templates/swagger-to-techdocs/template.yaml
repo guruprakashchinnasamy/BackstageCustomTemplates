@@ -6,7 +6,7 @@ metadata:
   description: Create a new standalone documentation project using Swagger files
   tags:
     - swagger
-    - Open API
+    - OpenAPI
     - techdocs
     - mkdocs
 spec:
@@ -31,7 +31,7 @@ spec:
           type: string
           description: A description for the component
         swaggerUrl:
-          title: Swagger Location URL-
+          title: Swagger Location URL
           type: string
           description: provide the swagger public URL
           #ui:field: RepoUrlPicker
