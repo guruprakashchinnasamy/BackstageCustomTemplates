@@ -1,0 +1,9 @@
+site_name: ${{values.name | dump}}
+site_description: ${{values.description | dump}}
+
+nav:
+  - API (md): 'all-apis.md'
+  #- API (html): 'https://guruprakashchinnasamy.github.io/Backstage_App/all-apis.html'
+  
+plugins:
+  - techdocs-core
