@@ -19,7 +19,7 @@ spec:
   type: openapi
   lifecycle: production
   owner: ${{values.owner | dump}}
-  system: inventory-api
+  system: ${{values.name | dump}}
   definition:
-    $text: https://${{values.repoSwaggerUrl.host}}/${{values.repoSwaggerUrl.owner}}/${{values.repoSwaggerUrl.repo}}/blob/main/${{values.swaggerFilePath}}
+    $text: https://${{values.repoUrl.host}}/${{values.repoUrl.owner}}/${{values.repoUrl.repo}}/blob/main/swagger/${{values.swaggerFileName}}
     #$text: ${{values.swaggerFilePath2}}
