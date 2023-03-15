@@ -85,8 +85,8 @@ spec:
       name: Fetch Docs
       action: fetch:plain
       input:
-        targetPath: ./community
-        url: https://github.com/backstage/community/tree/main/backstage-community-sessions
+        targetPath: ./swagger-file
+        url: https://github.com/guruprakashchinnasamy/Backstage_App/blob/main/Backstage_docs/SwaggerInventory.yaml
         
     - id: publish
       name: Publish
