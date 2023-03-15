@@ -11,10 +11,6 @@ metadata:
 spec:
   owner: backstage/techdocs-core
   type: documentation
-  files:
-    - path: myNewFile.txt
-      content: |
-        This is some example content for my new file.
   parameters:
     - title: Fill in some steps
       required:
@@ -94,7 +90,12 @@ spec:
           swaggerFilePath2: ${{ parameters.swaggerFilePath2 }}
           owner: ${{ parameters.owner }}
           
-    
+    - id: create-example-file
+      name: Create example file
+      action: filesystem:create-file
+      path: data/example.txt
+      content: |
+          This is an example file.
         
     - id: publish
       name: Publish
