@@ -21,4 +21,4 @@ spec:
   owner: ${{values.owner | dump}}
   system: inventory-api
   definition:
-    $text: ${{values.swaggerUrl | dump}}
+    $text: ${{values.swaggerUrl}}
