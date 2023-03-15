@@ -21,4 +21,4 @@ spec:
   owner: ${{values.owner | dump}}
   system: inventory-api
   definition:
-    $text: https://www.${{values.repoSwaggerUrl.host}}/${{values.repoSwaggerUrl.owner}}/${{values.repoSwaggerUrl.repo}}/${{values.swaggerFilePath}}
+    $text: https://${{values.repoSwaggerUrl.host}}/${{values.repoSwaggerUrl.owner}}/${{values.repoSwaggerUrl.repo}}/${{values.swaggerFilePath}}
