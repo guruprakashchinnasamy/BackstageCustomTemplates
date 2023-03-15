@@ -29,15 +29,8 @@ spec:
           title: Description
           type: string
           description: A description for the component
-        repoTargetUrl:
-          title: Repository Location
-          type: string
-          ui:field: RepoUrlPicker
-          ui:options:
-            allowedHosts:
-              - github.com
         swaggerUrl:
-          title: Swagger Location (RAW URL)
+          title: Swagger file Location
           type: string
           description: Provide the Swagger files public RAW URL
           #ui:field: RepoUrlPicker
