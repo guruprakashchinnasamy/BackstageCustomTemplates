@@ -55,6 +55,7 @@ spec:
     - title: Choose a location
       required:
         - repoUrl
+        - swaggerFilePath2
       properties:
         repoUrl:
           title: Repository Location
@@ -63,6 +64,14 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+        swaggerFilePath2:
+          title: Swagger File Location
+          type: string
+          description: Provide the Path & File name of Swagger. Example - swagger/pet-store.yaml  
+          #ui:field: RepoUrlPicker
+          #ui:options:
+            #allowedHosts:
+              #- github.com
 
   # This template is meant to be used on top of an existing template.
   # By adding the following and fetching from an absolute URL you can
@@ -79,6 +88,7 @@ spec:
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           repoSwaggerUrl: ${{ parameters.repoSwaggerUrl | parseRepoUrl }}
           swaggerFilePath: ${{ parameters.swaggerFilePath }}
+          swaggerFilePath2: ${{ parameters.swaggerFilePath2 }}
           owner: ${{ parameters.owner }}
           
     - id: fetch-docs
