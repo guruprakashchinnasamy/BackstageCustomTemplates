@@ -92,7 +92,7 @@ spec:
           
     - id: create-example-file
       name: Create example file
-      action: filesystem:create-file
+      action: github:create-file
       path: data/example.txt
       content: |
           This is an example file.
