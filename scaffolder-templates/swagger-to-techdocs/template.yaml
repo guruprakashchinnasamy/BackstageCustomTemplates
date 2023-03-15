@@ -11,7 +11,10 @@ metadata:
 spec:
   owner: backstage/techdocs-core
   type: documentation
-
+  files:
+    - path: myNewFile.txt
+      content: |
+        This is some example content for my new file.
   parameters:
     - title: Fill in some steps
       required:
@@ -91,12 +94,7 @@ spec:
           swaggerFilePath2: ${{ parameters.swaggerFilePath2 }}
           owner: ${{ parameters.owner }}
           
-    - id: fetch-docs
-      name: Fetch Docs
-      action: fetch:plain
-      input:
-        targetPath: ./swagger-file
-        url: https://github.com/guruprakashchinnasamy/Backstage_App/blob/main/Backstage_docs/SwaggerInventory.yaml
+    
         
     - id: publish
       name: Publish
